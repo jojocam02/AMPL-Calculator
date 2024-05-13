@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPL Compound Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AMPL Compound Calculator</h1>
+        <form id="calculator-form">
+            <label for="amount">Initial AMPL Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="rebase">Rebase Percentage (%):</label>
+            <input type="number" id="rebase" name="rebase" step="0.01" required>
+
+            <label for="days">Compounding Days:</label>
+            <input type="number" id="days" name="days" required>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
